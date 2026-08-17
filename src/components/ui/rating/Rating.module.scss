@@ -1,0 +1,38 @@
+.rating {
+    margin-top: $space-3;
+    max-width: 280px;
+    background-color: $bg-main;
+    border-radius: $radius-md;
+    border: 1px solid $color-border;
+    padding:$space-2;
+    display: flex;
+    gap: $space-2;
+    align-items: center;
+
+    .averageContainer {
+        display: flex;
+        gap: $space-2;
+    }
+
+    .average {
+        font-size: $font-lg;
+        line-height: 1.1;
+    }
+    
+    .stars {
+        display: flex;
+        align-items: center;
+        gap: .2rem;
+    }
+    
+    
+    .span {
+        font-size: $font-sm;
+        color: $foreground-muted;
+    }
+    
+    .star {
+        color: $color-yellow;
+    }
+}
+

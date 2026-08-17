@@ -1,0 +1,41 @@
+.button {
+    padding: $space-1 $space-2;
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    border-radius: $radius-full;
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    width: fit-content;
+    transition: $transition-fast;
+    font-size: $font-sm;
+    &:hover {
+        box-shadow: $shadow-md;
+    }
+}
+
+.primary {
+    color: white;
+}
+
+.secondary {
+    color: $foreground;
+    border-color: $color-border;
+    background-color: $white;
+}
+
+.md {
+    padding: 12px 24px;
+
+    .icon {
+        width: 20px;
+    }
+}
+
+.sm {
+    padding: 8px 16px;
+
+    .icon {
+        width: 16px;
+    }
+}

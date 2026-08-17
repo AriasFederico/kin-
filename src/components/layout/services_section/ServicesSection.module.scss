@@ -1,0 +1,61 @@
+.header {
+    max-width: 660px;
+
+    .title {
+        font-size: 30px;
+        font-weight: $weight-medium;
+        margin-top: $space-1;
+        @include desktop(){
+            font-size: 36px;
+        }
+    }
+    
+    .subtitle {
+        margin-top: $space-2;
+        color: $foreground-muted;
+    }
+}
+
+.info {
+    margin-top: $space-4;
+
+    @include desktop(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-2;
+    }
+
+    .card {
+        background-color: $bg-main;
+        border: 1px solid $color-border;
+        padding: $space-3;
+        border-radius: $radius-sm;
+        margin-bottom: $space-1;
+        cursor: pointer;
+        transition: $transition-normal;
+    
+        @include desktop(){
+            margin: 0;
+        }
+    
+        &:hover {
+            background-color: $bg-soft;
+        }
+    
+        .id {
+            font-family: $font-code;
+            color: $color-primary;
+        }
+    
+        .title {
+            margin-top: $space-2;
+            font-size: $font-lg;
+        }
+    
+        .desc {
+            margin-top: $space-2;
+            color: $foreground-muted;
+            font-size: $font-sm;
+        }
+    }
+}

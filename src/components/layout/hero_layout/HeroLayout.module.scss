@@ -1,0 +1,54 @@
+.heroLayout {
+  // --- CONFIGURACIÓN PARA MOBILE ---
+  padding: $space-9 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  &.soft {background-color: $bg-soft;}
+  &.light {background-color: $white;}
+  &.bgImage {
+    background-image: url('../../../assets/hero_section.webp');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+      /* El gradiente: empieza sólido, se aclara al medio y se vuelve muy transparente al final */
+      background: linear-gradient(
+        to right, 
+        rgba($bg-soft, 0.85) 0%,   /* Inicio: semi-opaco */
+        rgba($bg-soft, 0.35) 80%,  /* Medio: más transparente y más temprano */
+        rgba($bg-soft, 0) 100%     /* Final: completamente transparente */
+      );
+    }
+  }
+  
+  .container {
+    z-index: 100;
+    width: 100%;
+    @include container;
+  }
+
+  // --- CONFIGURACIÓN PARA DESKTOP ---
+  @include desktop {
+    padding:0;
+    
+    .container {
+      // comentar width si es un hero con bg
+        // width: auto;
+      // comentar width si es un hero con bg
+        display: flex;
+        align-items: center;
+        gap: $space-4;
+      }
+    }
+}

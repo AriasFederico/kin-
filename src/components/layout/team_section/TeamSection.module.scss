@@ -1,0 +1,27 @@
+.header {
+    max-width: 660px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: $weight-medium;
+    margin-top: $space-1;
+    
+    @include desktop(){
+        font-size: 36px;
+    }
+}
+
+.subtitle {
+    color: $foreground-muted;
+    margin-top: $space-2;
+}
+
+.info {
+    margin-top: $space-3;
+
+    @include desktop(){
+        display: flex;
+        gap: $space-2;
+    }
+}

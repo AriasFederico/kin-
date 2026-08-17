@@ -1,0 +1,22 @@
+.section {
+    padding: 9rem 0;
+    &.soft {background-color: $bg-soft;}
+    &.light {background-color: $white;}
+    &.dark {background-color: $bg-dark}
+
+    .container {
+        @include container;
+        width: 100%;
+    }
+ }
+
+//     @include desktop(){
+//         .container {
+//             width: 100%;
+//             display: flex;
+//             align-items: center;
+//             // cambiar justify en caso de ser necesario
+//             justify-content: center;
+//             gap: $space-4; 
+//         }
+//     }

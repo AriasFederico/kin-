@@ -1,0 +1,21 @@
+.badge {
+	width: fit-content;
+	font-size: $font-sm;
+}
+
+.bg {
+	font-size: 12px;
+	padding: 4px 12px 5px;
+	border: 1px solid $color-border;
+	border-radius: $radius-full;
+	color: $color-primary;
+	background-color: $white;
+}
+
+.label {
+	font-weight: 400;
+	color: $color-primary;
+	letter-spacing: 1px;
+}
+
+

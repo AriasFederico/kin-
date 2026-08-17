@@ -1,0 +1,76 @@
+.profesional {
+    background-color: $bg-main;
+    border: 1px solid $color-border;
+    padding: $space-3;
+    border-radius: $radius-md;
+    margin-bottom: $space-2;
+    transition: $transition-normal;
+
+    @include desktop(){
+        margin: 0;
+        flex: 1;
+    }
+    
+    &:hover {
+        box-shadow: $shadow-md;
+        .avatar {
+            background-color: $color-primary;
+            color: $white;
+        }
+    }
+    
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: $space-2;
+    }
+    
+    .avatar {
+        background-color: $color-primary-muted;
+        color: $color-primary;
+        padding: $space-2;
+        border-radius: $radius-md;
+        font-size: $font-sm;
+        transition: $transition-normal;
+    }
+
+    .name {
+        line-height: 1.1;
+        font-weight: $weight-medium;
+    }
+
+    .speciality {
+        font-size: $font-sm;
+        color: $color-primary;
+    }
+
+    .contact {
+        margin-top: $space-1;
+        border-top: 1px solid $color-border;
+        padding: $space-2 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service {
+        margin-top: $space-2;
+        color: $foreground-muted;
+    }
+
+    .mn {
+        color: $foreground-muted;
+        font-size: 12px;
+    }
+
+    .cta {
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        font-size: $font-sm;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+

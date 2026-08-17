@@ -1,0 +1,22 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    // flex-direction: column;
+
+    .clinicName {
+        font-size: $font-xl;
+        font-weight: $weight-medium;
+        color: $color-primary;
+    }
+
+    .secondName {
+        display: none;
+        
+        @include desktop(){
+            font-size: 12px;
+            display: block;
+            color: $foreground-muted;
+        }
+    }
+}

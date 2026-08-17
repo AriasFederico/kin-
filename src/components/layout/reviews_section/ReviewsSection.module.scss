@@ -1,0 +1,80 @@
+.topSection {
+    @include desktop(){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header {
+        max-width: 660px;
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: $weight-medium;
+    margin-top: $space-1;
+    @include desktop(){
+        font-size: 36px;
+    }
+}
+
+.items {
+    margin-top: $space-3;
+
+    @include desktop(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $space-3;
+    }
+}
+
+
+.reviewCard {
+    background-color: $bg-main;
+    margin-bottom: $space-2;
+    border: 1px solid $color-border;
+    padding: $space-3;
+    border-radius: $radius-md;
+
+    @include desktop(){
+        margin: 0;
+        flex: 1;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        gap: $space-1;
+    }
+
+    .avatar {
+        background-color: $color-primary-muted;
+        padding: $space-1 $space-2;
+        border-radius: $radius-md;
+        color: $color-primary-dark;
+    }
+
+    .stars {
+        margin-top: $space-2;
+        display: flex;
+        gap: .2rem;
+    }
+
+    .starIcon {
+        color: $color-yellow;
+    }
+
+    .review {
+        margin-top: $space-2;
+        font-size: $font-sm;
+        color: $foreground-muted;
+    }
+}
+
