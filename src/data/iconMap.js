@@ -1,6 +1,9 @@
 import {
   BsClock,
+  BsEnvelopeAt,
+  BsFacebook,
   BsFillStarFill,
+  BsInstagram,
   BsPinMap,
   BsSend,
   BsWhatsapp,
@@ -14,4 +17,7 @@ export const iconMap = {
   send: BsSend,
   star: BsFillStarFill,
   google: FcGoogle,
+  instagram: BsInstagram,
+  facebook: BsFacebook,
+  email: BsEnvelopeAt,
 };

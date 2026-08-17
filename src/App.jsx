@@ -2,6 +2,8 @@ import './App.scss';
 import {
   AboutSection,
   CoverageSection,
+  CtaSection,
+  Footer,
   Header,
   HeroSection,
   LocationSection,
@@ -12,8 +14,18 @@ import {
 import { dataKine } from './data/data';
 
 function App() {
-  const { header, hero, reviews, about, services, team, coverage, location } =
-    dataKine;
+  const {
+    header,
+    hero,
+    reviews,
+    about,
+    services,
+    team,
+    coverage,
+    location,
+    cta_section,
+    footer,
+  } = dataKine;
 
   return (
     <>
@@ -25,6 +37,8 @@ function App() {
       <CoverageSection data={coverage} />
       <LocationSection data={location} />
       <ReviewsSection data={reviews} />
+      <CtaSection data={cta_section} />
+      <Footer data={footer} />
     </>
   );
 }

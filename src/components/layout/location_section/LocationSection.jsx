@@ -13,7 +13,7 @@ export const LocationSection = ({ data }) => {
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.15 }}
         >
           {title}
@@ -23,7 +23,7 @@ export const LocationSection = ({ data }) => {
       <motion.div
         className={styles.container}
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.35 }}
       >
         <div className={styles.content}>

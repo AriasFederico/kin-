@@ -11,7 +11,7 @@ export const AboutSection = ({ data }) => {
         <motion.div
           className={styles.media}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.15 }}
         >
           <img src={media} alt='' />
@@ -23,14 +23,14 @@ export const AboutSection = ({ data }) => {
             className={styles.title}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 1, delay: 0.35 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             {title}
           </motion.h2>
           <motion.p
             className={styles.text}
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
             {text}
@@ -40,7 +40,7 @@ export const AboutSection = ({ data }) => {
             className={styles.info}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 1, delay: 0.65 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
           >
             {info?.map(({ exp, span }) => (
               <div className={styles.infoItem} key={exp}>

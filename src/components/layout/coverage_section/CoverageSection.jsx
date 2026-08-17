@@ -13,7 +13,7 @@ export const CoverageSection = ({ data }) => {
           <motion.h2
             className={styles.title}
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.15 }}
           >
             {title}
@@ -21,7 +21,7 @@ export const CoverageSection = ({ data }) => {
           <motion.p
             className={styles.subtitle}
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.35 }}
           >
             {subtitle}
@@ -30,7 +30,7 @@ export const CoverageSection = ({ data }) => {
             href={cta.href}
             className={styles.cta}
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
             {cta.label}
@@ -40,7 +40,7 @@ export const CoverageSection = ({ data }) => {
         <motion.div
           className={styles.items}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.65 }}
         >
           {items?.map((item, index) => (

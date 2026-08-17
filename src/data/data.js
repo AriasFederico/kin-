@@ -250,5 +250,41 @@ export const dataKine = {
     ],
   },
 
+  cta_section: {
+    title: 'Dá el primer paso hacia tu recuperación',
+    subtitle:
+      'Escribinos por WhatsApp y coordinamos tu primer turno. Te respondemos en el día.',
+    cta: {
+      icon: 'whatsapp',
+      label: 'Escribinos por WhatsApp',
+      variant: 'secondary',
+      href: buildWaLink('asd'),
+    },
+  },
+
+  footer: {
+    text: 'Kinesiología y rehabilitación con atención personalizada y las principales obras sociales.',
+    visit_us: {
+      label: 'Visitanos',
+      items: [
+        { icon: 'location', label: 'Av. Corrientes 1234, CABA' },
+        { icon: 'clock', label: 'Lun a Vie · 8:00 – 20:00' },
+      ],
+    },
+
+    rrss: {
+      label: 'Redes sociales',
+      items: [
+        { icon: 'instagram', label: '@kine.arg', href: '' },
+        { icon: 'email', label: 'kine@gmail.com', href: '' },
+      ],
+    },
+
+    copyright: {
+      label: `© 2026 ${CLINIC_NAME}. Todos los derechos reservados.`,
+      by_codefex: 'Desarrollado por Codefex', // href
+    },
+  },
+
   // fin
 };

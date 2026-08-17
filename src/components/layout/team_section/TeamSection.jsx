@@ -12,7 +12,7 @@ export const TeamSection = ({ data }) => {
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.15 }}
         >
           {title}
@@ -20,7 +20,7 @@ export const TeamSection = ({ data }) => {
         <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.35 }}
         >
           {subtitle}
@@ -29,7 +29,7 @@ export const TeamSection = ({ data }) => {
       <motion.div
         className={styles.info}
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
         {info?.map(({ avatar, name, speciality, service, mn, cta }) => (

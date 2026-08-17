@@ -1,5 +1,7 @@
 export * from './about_section/AboutSection';
 export * from './coverage_section/CoverageSection';
+export * from './cta_section/CtaSection';
+export * from './footer/Footer';
 export * from './header/Header';
 export * from './hero_layout/HeroLayout';
 export * from './heroSection/HeroSection';
