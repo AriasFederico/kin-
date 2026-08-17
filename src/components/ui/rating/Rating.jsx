@@ -10,6 +10,7 @@ export const Rating = ({ stars, average }) => {
       className={styles.rating}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 1, delay: 0.35 }}
     >
       <Google size={30} />
