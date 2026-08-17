@@ -12,7 +12,8 @@ export const ServicesSection = ({ data }) => {
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.15 }}
         >
           {title}
@@ -20,7 +21,8 @@ export const ServicesSection = ({ data }) => {
         <motion.p
           className={styles.subtitle}
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.35 }}
         >
           {text}
@@ -29,7 +31,8 @@ export const ServicesSection = ({ data }) => {
       <motion.div
         className={styles.info}
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.5 }}
       >
         {info?.map(({ title, desc }, index) => (

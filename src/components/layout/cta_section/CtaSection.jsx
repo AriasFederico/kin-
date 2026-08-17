@@ -10,7 +10,8 @@ export const CtaSection = ({ data }) => {
       <motion.div
         className={styles.container}
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.15 }}
       >
         <h2 className={styles.title}>{title}</h2>
