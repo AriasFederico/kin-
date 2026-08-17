@@ -20,6 +20,7 @@ export const Header = ({ data }) => {
           variant={cta.variant}
           icon={cta.icon}
           size='sm'
+          href={cta.href}
         />
       </div>
     </header>

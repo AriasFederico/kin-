@@ -7,8 +7,24 @@ const PHONE_NUMBER = '5491112345678';
 const buildWaLink = (message) =>
   `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
 
+// profesionales
+
+const teamNames = {
+  vr: 'Valentina Ríos',
+  mh: 'Martin Herrera',
+  ds: 'Diego Sosa',
+};
+
 const whatsappMessages = {
-  hero: `Hola ${CLINIC_NAME}, quisiera consultar por un turno.`,
+  hero: `Hola ${CLINIC_NAME}!, quisiera consultar por un turno.`,
+
+  // team
+  valentinaRios: `Hola! Quisiera reservar un turno con Valentina Rios`,
+  martinHerrera: `Hola! Quisiera reservar un turno con Martin Herrera`,
+  diegoSosa: `Hola! Quisiera reservar un turno con Diego Sosa`,
+
+  // obra social
+  coverage: `Hola! Quería consultar si atienden con mi obra social.`,
 };
 
 export const dataKine = {
@@ -124,7 +140,7 @@ export const dataKine = {
         mn: '12.483',
         cta: {
           label: 'Reservar',
-          href: buildWaLink('Hola'),
+          href: buildWaLink(whatsappMessages.valentinaRios),
         },
       },
       {
@@ -135,7 +151,7 @@ export const dataKine = {
         mn: '9.271',
         cta: {
           label: 'Reservar',
-          href: buildWaLink('Hola'),
+          href: buildWaLink(whatsappMessages.martinHerrera),
         },
       },
       {
@@ -146,7 +162,7 @@ export const dataKine = {
         mn: '15.902',
         cta: {
           label: 'Reservar',
-          href: buildWaLink('Hola'),
+          href: buildWaLink(whatsappMessages.diegoSosa),
         },
       },
       // CAMBIAR NOMBRES 2-3 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -160,7 +176,7 @@ export const dataKine = {
       'Atendemos a través de las principales obras sociales y prepagas. Escribinos y te confirmamos tu cobertura al instante.',
     cta: {
       label: 'Consultar mi cobertura',
-      href: buildWaLink(''),
+      href: buildWaLink(whatsappMessages.coverage),
     },
     items: [
       'OSDE',
@@ -259,7 +275,7 @@ export const dataKine = {
       icon: 'whatsapp',
       label: 'Escribinos por WhatsApp',
       variant: 'secondary',
-      href: buildWaLink('asd'),
+      href: buildWaLink(whatsappMessages.hero),
     },
   },
 
