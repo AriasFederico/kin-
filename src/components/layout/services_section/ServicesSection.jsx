@@ -6,7 +6,7 @@ import styles from './ServicesSection.module.scss';
 export const ServicesSection = ({ data }) => {
   const { badge, title, text, info } = data;
   return (
-    <SectionLayout bgVariant={'dark'}>
+    <SectionLayout bgVariant={'dark'} id={'services'}>
       <div className={styles.header}>
         <Badge label={badge} />
         <motion.h2

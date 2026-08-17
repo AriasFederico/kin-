@@ -28,6 +28,7 @@ export const dataKine = {
       { id: 'services', label: 'Servicios', href: '#services' },
       { id: 'coverage', label: 'Obras sociales', href: '#coverage' },
       { id: 'location', label: 'Ubicación', href: '#location' },
+      { id: 'reviews', label: 'Opiniones', href: '#reviews' },
     ],
     cta: {
       label: 'Turno',

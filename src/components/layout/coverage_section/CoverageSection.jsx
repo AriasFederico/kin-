@@ -6,7 +6,7 @@ import styles from './CoverageSection.module.scss';
 export const CoverageSection = ({ data }) => {
   const { badge, title, subtitle, items, cta } = data;
   return (
-    <SectionLayout bgVariant={'soft'}>
+    <SectionLayout bgVariant={'soft'} id={'coverage'}>
       <div className={styles.container}>
         <div className={styles.header}>
           <Badge label={badge} />

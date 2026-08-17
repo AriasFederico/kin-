@@ -7,7 +7,7 @@ import styles from './LocationSection.module.scss';
 export const LocationSection = ({ data }) => {
   const { title, badge, info, cta, coordenates } = data;
   return (
-    <SectionLayout bgVariant={'soft'}>
+    <SectionLayout bgVariant={'soft'} id={'location'}>
       <div className={styles.header}>
         <Badge label={badge} />
         <motion.h2

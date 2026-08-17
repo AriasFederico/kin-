@@ -10,7 +10,7 @@ export const ReviewsSection = ({ data }) => {
 
   const { badge, title, rating_card, reviews_cards } = data;
   return (
-    <SectionLayout bgVariant={'soft'}>
+    <SectionLayout bgVariant={'soft'} id={'reviews'}>
       <div className={styles.topSection}>
         <div className={styles.header}>
           <Badge label={badge} />
